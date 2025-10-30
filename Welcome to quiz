@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class QuizProgram {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int score = 0;
+
+        System.out.println("Welcome to the Quiz Program!");
+
+        // Question 1
+        System.out.println("What is the capital of France?");
+        System.out.println("A) Berlin");
+        System.out.println("B) Paris");
+        System.out.println("C) London");
+        System.out.println("D) Rome");
+        String answer1 = scanner.nextLine();
+        if (answer1.equalsIgnoreCase("B")) {
+            score++;
+            System.out.println("Correct!");
+        } else {
+            System.out.println("Incorrect. The correct answer is B) Paris");
+        }
+
+        // Question 2
+        System.out.println("What is the largest planet in our solar system?");
+        System.out.println("A) Earth");
+        System.out.println("B) Saturn");
+        System.out.println("C) Jupiter");
+        System.out.println("D) Uranus");
+        String answer2 = scanner.nextLine();
+        if (answer2.equalsIgnoreCase("C")) {
+            score++;
+            System.out.println("Correct!");
+        } else {
+            System.out.println("Incorrect. The correct answer is C) Jupiter");
+        }
+
+        // Question 3
+        System.out.println("Who painted the Mona Lisa?");
+        System.out.println("A) Leonardo da Vinci");
+        System.out.println("B) Michelangelo");
+        System.out.println("C) Raphael");
+        System.out.println("D) Caravaggio");
+        String answer3 = scanner.nextLine();
+        if (answer3.equalsIgnoreCase("A")) {
+            score++;
+            System.out.println("Correct!");
+        } else {
+            System.out.println("Incorrect. The correct answer is A) Leonardo da Vinci");
+        }
+
+        System.out.println("Your final score is: " + score + "/3");
+    }
+}
